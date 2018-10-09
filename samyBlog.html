@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>Smay´s blog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Bellefair|Indie+Flower|Kavivanar|Lora|Titillium+Web" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+ <body>
+   <div id="fb-root"></div>  <!----- script para el plugin de comentarios de facebook--->
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+   <div class="bio">
+       <h1 align="center">About Samy!</h1>
+       <center>
+       <img src="samy1.jpg" height="400" width="700" border="1"> <br /><br />
+       <p1>
+         This is samy my little and naughty kitty.  <br /><br />
+         She was adopt 4 years ago since she was a little baby cat.
+         One night Samy follow my old sister until my house,
+         she was sorprised because samy obey her when she call her through she looks so afraid to saw extrange people for her.  <br /><br />
+         Samy represents a bless sends by God because my family was suffered a critical situation and samy came to my home for thieve a lot of laughs in all my family members.  <br /><br />
+         I can´t imagine what I will feel when samy is gone forever? but I know that always I still remember her for all the funny moments that we have.  <br /><br />
+         And finaly I want to share to the people some photographies about her that for me represents some real significants with her in my life.  <br /><br />
+       </p1>
+       <p2>
+         Samy is not a simple pet or a normal pet, she is a family member, she is the grandchild for my parents that doesn´t have yet.  <br /><br />
+         Definitely she is a little naugthy angel for my family.  <br /><br />
+       </p2>
+       </center>
+       <hr width="60%" align="center" /> <!-----linea de separacion--->
+    </div>
+
+    <center>
+    <h2>Samy´s galery</h2>
+      <!-- The eight columns -->
+    <div class="row1">
+    <div class="column">
+      <img src="samy5.jpg" alt="Samy´s faces" style="width:70%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="samy3.jpg" alt="Samy´s faces" style="width:50%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="samy4.jpg" alt="Samy´s faces" style="width:50%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="samy2.jpg" alt="Samy´s faces" style="width:50%" onclick="myFunction(this);"><br /><br />
+    </div>
+  </div>
+    <div class="row2">
+    <div class="column">
+    <img src="samy6.jpg" alt="Samy´s faces" style="width:50%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="samy9.jpg" alt="Samy´s faces" style="width:70%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="samy8.jpg" alt="Samy´s faces" style="width:50%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="samy7.jpg" alt="Samy´s faces" style="width:50%" onclick="myFunction(this);">
+    </div>
+  </div>
+  </center>
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:75%">
+    <div id="imgtext"></div>
+  </div>
+
+    <script>
+    function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+    }
+    </script>
+
+
+   <div class="back">
+    <center>
+    <a href= "blog personal.html"> go back </a><br></br>
+    </center>
+  </div>
+  <div class="fb-comments" data-href="https://www.facebook.com/settings?tab=account&amp;section=username" data-width="500px" data-numposts="10"></div><br /><br />
+
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Lora";
+    }
+
+    /* The grid: Four equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* The expanding image container */
+    .container {
+        position: absolute;
+        display: none;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Closable button inside the expanded image */
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    </style>
+   </body>
+   </html>

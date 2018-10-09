@@ -1,0 +1,239 @@
+<html>
+    <head>
+        <title>Smay´s blog V2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Bellefair|Indie+Flower|Kavivanar|Lora|Titillium+Web" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+ <body>
+   <div id="fb-root"></div>  <!----- script para el plugin de comentarios de facebook--->
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+   <div class="bio">
+       <h1 align="center">About Samy!</h1>
+       <center>
+       <img src="samy1.jpg" height="400" width="700" border="1"> <br /><br />
+       <p1>
+         This is samy my little and naughty kitty.  <br /><br />
+         She was adopt 4 years ago since she was a little baby cat.
+         One night Samy follow my old sister until my house,
+         she was sorprised because samy obey her when she call her through she looks so afraid to saw extrange people for her.  <br /><br />
+         Samy represents a bless sends by God because my family was suffered a critical situation and samy came to my home for thieve a lot of laughs in all my family members.  <br /><br />
+         I can´t imagine, what I feel when samy is gone forever? but I know that always I still remember her for all the funny moments that we have.  <br /><br />
+         And finaly I want to share to the people some photographies about her that for me represents some real significants with her in my life.  <br /><br />
+       </p1>
+       <p2>
+         Samy is not a simple pet or a normal pet, she is a family member, she is the grandchild for my parents that doesn´t have yet.  <br /><br />
+         Definitely she is a little naugthy angel for my family.  <br /><br />
+       </p2>
+       </center>
+       <hr width="60%" align="center" /> <!-----linea de separacion--->
+    </div>
+
+    <center>
+    <h2>Samy´s galery</h2>
+      <!-- The eight columns -->
+    <div class="container">
+    <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="samy2.1.png" style="width:75%">
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="samy3.1.png" style="width:75%">
+    </div>
+
+    <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="samy4.1.png" style="width:75%">
+    </div>
+
+    <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="samy5.1.png" style="width:75%">
+    </div>
+
+    <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="samy6.1.png" style="width:75%">
+    </div>
+
+    <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="samy7.1.png" style="width:50%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+    <div class="column">
+        <img class="demo cursor" src="samy2.1.png" style="width:100%" onclick="currentSlide(1)" alt="Samy´s faces">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="samy3.1.png" style="width:100%" onclick="currentSlide(2)" alt="Samy´s faces">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="samy4.1.png" style="width:100%" onclick="currentSlide(3)" alt="Samy´s faces">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="samy5.1.png" style="width:100%" onclick="currentSlide(4)" alt="Samy´s faces">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="samy6.1.png" style="width:100%" onclick="currentSlide(5)" alt="Samy´s faces">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="samy7.1.png" style="width:100%" onclick="currentSlide(6)" alt="Samy´s faces">
+    </div>
+    </div>
+  </div>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+     <div class="back">
+      <center>
+      <a href= "blog personal.html"> go back </a><br></br>
+      </center>
+    </div>
+    <div class="fb-comments" data-href="https://www.facebook.com/settings?tab=account&amp;section=username" data-width="500px" data-numposts="10"></div><br /><br />
+
+
+      <style>
+      body {
+          margin: 0;
+          font-family: "Lora";
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      img {
+        vertical-align: middle;
+      }
+
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: relative;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+  </style>
+  </body>
+</html>
